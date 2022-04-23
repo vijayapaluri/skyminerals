@@ -176,7 +176,7 @@ if Refresh:
                 st.markdown("<h5 style='text-align: center; color:  #EC7063;'>Data set has less data values so can't predict</h5>", unsafe_allow_html=True) 
     elif Datasets=="gemval":
                 st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Dataset-gemval</h3>", unsafe_allow_html=True)
-                gemval=pd.read_csv("C:/Users/Vijaya/gemvalue/gemval_index.csv",parse_dates = ['date'], index_col = ['date'])
+                gemval=pd.read_csv("https://raw.githubusercontent.com/vijayapaluri/skyminerals/main/gemval_index.csv",parse_dates = ['date'], index_col = ['date'])
                 st.write(gemval) 
                 st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Summary Statistics</h3>", unsafe_allow_html=True) 
                 st.dataframe(gemval.describe())
