@@ -11,7 +11,7 @@ Refresh=st.sidebar.button("Refresh")
 if Refresh: 
     if Datasets=="scfi":
         st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Dataset-scfi</h3>", unsafe_allow_html=True)
-        scfi=pd.read_csv("C:/Users/vijaya/fbx/freight_index.csv",parse_dates = ['date'], index_col = ['date'])
+        scfi=pd.read_csv("https://raw.githubusercontent.com/vijayapaluri/skyminerals/main/freight_index.csv",parse_dates = ['date'], index_col = ['date'])
         st.write(scfi) 
         st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Summary Statistics</h3>", unsafe_allow_html=True) 
         st.dataframe(scfi.describe())
