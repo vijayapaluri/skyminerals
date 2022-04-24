@@ -39,7 +39,7 @@ if Refresh:
         except Exception as e:
             print(e)
         st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Dataset-scfi</h3>", unsafe_allow_html=True)
-        scfi=pd.read_csv("C:/Users/vijaya/freight_index.csv",parse_dates = ['date'], index_col = ['date'])
+        scfi=pd.read_csv("https://raw.githubusercontent.com/vijayapaluri/skyminerals/main/freight_index.csv",parse_dates = ['date'], index_col = ['date'])
         st.write(scfi) 
         st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Summary Statistics</h3>", unsafe_allow_html=True) 
         st.dataframe(scfi.describe())
@@ -228,7 +228,7 @@ if Refresh:
                 except Exception as e:
                     print(e)
                 st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Dataset-gemval</h3>", unsafe_allow_html=True)
-                gemval=pd.read_csv("C:/Users/Vijaya/gemval_index.csv",parse_dates = ['date'], index_col = ['date'])
+                gemval=pd.read_csv("https://raw.githubusercontent.com/vijayapaluri/skyminerals/main/gemval_index.csv",parse_dates = ['date'], index_col = ['date'])
                 #gemval=pd.read_csv("C:/Users/Vijaya/gemvalue/gemval_index.csv",parse_dates = ['date'], index_col = ['date'])
                 st.write(gemval) 
                 st.markdown("<h3 style='text-align: Left; color:  #CA6F1E;'>Summary Statistics</h3>", unsafe_allow_html=True) 
